@@ -1,0 +1,82 @@
+---
+title: "Git & GitHub Notes"
+author: "fortuneWalla"
+date: "June 19, 2015"
+output: html_document
+---
+----
+
+*1. Recommended: Every repository should include a README, LICENSE, and .gitignore.*
+
+**2. Create a new repository on the command line**
+```
+$echo # www-blue >> README.md
+% Usually done inside a new directory.
+$git init
+% Adding file for the commit.
+$git add README.md
+$git add -A
+% Committing with comments.
+$git commit -m "first commit"
+% Add the location to push files to
+$git remote add origin https://github.com/fortunewalla/www-blue.git
+% Send files from local directory to Remote Master directory.
+$git push -u origin master
+```
+
+**3. Push an existing repository from the command line**
+```
+$git remote add origin $https://github.com/fortunewalla/www-blue.git
+git push -u origin master
+```
+
+**4. How to protect email address?**
+```
+git config user.email "username@users.noreply.github.com"
+```
+Confirm that you have set your email address correctly with the following command.
+
+```
+$git config user.email
+
+# username@users.noreply.github.com
+```
+**5. Github Pages CNAME file for external domain**
+
+Standard way to access GitHub Pages is:
+```
+https://username.github.io
+```
+
+To use your own domain: we create `CNAME` file with the contents of the `externaldomain.com`. Place this file in the `username.github.io` folder in the following structure `https://github.com/username/username.github.io`
+
+**4. Clone of a project
+
+Clone is a copy of the current state (project history, revisions, file history) of a project downloaded from a central repository. Clone repos have ability to share branches & make local modifications without impacting upstream users.
+
+Most changes occur locally & then synced to the 'master' repo of the project.
+
+'Pro Git'
+
+gitorious.org //free hosting
+gitlab.com //host locally
+bitbucket.org //cloud hosted free.
+stash - buy & install locally.
+
+git-client: sourcetreeapp.com free. Register for a free email.
+
+every commit has a unique ID.
+
+Date is When you made the commit. Not when you made added it to other repos.
+
+
+
+
+
+
+**6. LaTeX Test**
+
+This a sample equation in LaTeX i.e. $\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$ Can you view it??
+
+
+$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$
