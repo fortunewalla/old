@@ -84,19 +84,25 @@ $git remote add origin https://github.com/fortunewalla/www-blue.git
 % Send files from local directory to Remote Master directory.
 $git push -u origin master</code></pre>
 <p><strong>3. Push an existing repository from the command line</strong></p>
-<pre><code>$git remote add origin $https://github.com/fortunewalla/www-blue.git
-git push -u origin master</code></pre>
+<pre><code>$git remote add origin https://github.com/fortunewalla/www-blue.git
+$git push -u origin master</code></pre>
 <p><strong>4. How to protect email address?</strong></p>
-<pre><code>git config user.email &quot;username@users.noreply.github.com&quot;</code></pre>
+<pre><code>$git config user.email &quot;username@users.noreply.github.com&quot;</code></pre>
 <p>Confirm that you have set your email address correctly with the following command.</p>
 <pre><code>$git config user.email
 
 # username@users.noreply.github.com</code></pre>
-<p><strong>5. Github CNAME File</strong></p>
-<p>Standard way to access GitHub Pages is:</p>
-<pre><code>https://username.github.io</code></pre>
-<p>To use your own domain: we create <code>CNAME</code> file with the contents of the <code>externaldomain.com</code>. Place this file in the <code>username.github.io</code> folder in the following structure <code>https://github.com/username/username.github.io</code></p>
-<p><strong>5. LaTeX Test</strong></p>
+<p><strong>5. Caching password in memory</strong></p>
+<pre><code>$git config --global credential.helper cache</code></pre>
+<p>Default time in memory is 15 minutes.</p>
+<p>Setting a custom timeout in seconds.</p>
+<pre><code>$git config --global credential.helper 'cache --timeout=3600'</code></pre>
+<p><strong>6. Misc.</strong></p>
+<p>Most changes occur locally &amp; then synced to the ‘master’ repo of the project.</p>
+<p>‘Pro Git’ textbook.</p>
+<p>gitorious.org (free hosting), gitlab.com (host locally), bitbucket.org (cloud hosted free), stash (buy &amp; install locally), sourcetreeapp.com (free)</p>
+<p>Every commit has a unique ID. Date is When you made the commit. Not when you made added it to other repos.</p>
+<p><strong>7. LaTeX Test</strong></p>
 <p>This a sample equation in LaTeX i.e. <span class="math">\(\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\)</span> So what do you think of it?</p>
 <p><span class="math">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span></p>
 
