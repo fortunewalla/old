@@ -1,8 +1,8 @@
 ---
 title: "How do I to get started in & learn 'data science', 'data analytics'?"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "August 16, 2015"
-output: pdf_document
+output: html_document
 ---
 
 *Created on Friday, February 21st, 2014 at 6:57 am*

@@ -1,0 +1,15 @@
+---
+title: "Tech Tips"
+author: "Fortune Walla"
+date: "July 28, 2016"
+output: html_document
+---
+**URL for Default image of YouTube video 480px × 360px**
+`https://i.ytimg.com/vi/<VID>/hqdefault.jpg`
+
+**VirtualBox Time**
+```
+vboxmanage getextradata "guest" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled"
+vboxmanage setextradata "guest" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" "1"
+```
+

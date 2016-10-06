@@ -1,8 +1,8 @@
 ---
 title: "Referring to a SAS data set with its full filesystem path"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "August 16, 2015"
-output: pdf_document
+output: html_document
 ---
 *Posted on Friday, April 4th, 2014 at 3:14 am*
 

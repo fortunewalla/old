@@ -1,8 +1,8 @@
 ---
 title: "What is 'data science' / data analytics? - Yet another opinion"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "June 20, 2015"
-output: pdf_document
+output: html_document
 ---
 
 *Created on Friday, February 21st, 2014 at 6:52 am*

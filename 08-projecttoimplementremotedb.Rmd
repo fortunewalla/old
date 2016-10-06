@@ -1,8 +1,8 @@
 ---
 title: "Project to implement remote PHP web client/ MSSQL database server network setup"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "August 16, 2015"
-output: html_document
+output: pdf_document
 ---
 *Posted on Friday, May 16th, 2014 at 2:43 pm*
 

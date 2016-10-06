@@ -1,0 +1,46 @@
+---
+title: "TeX Notes"
+author: "Fortune Walla"
+date: "July 29, 2016"
+output: html_document
+---
+
+**Cannot use Unicode Characters**
+
+Default installation of MikTeX on Windows. Hence packages missing when creating documents.
+
+`ಕ್ರ ಕೇ ಕ್ಮ`
+
+`tex\latex\l3kernel\expl3.sty` part of package `l3kernel`  
+`tex\latex\l3packages\xparse\xparse.sty` from package `l3packages`  
+`tex\latex\paralist\paralist.sty` of package `paralist`  
+`tex\latex\subfig\subfig.sty` of package `subfig`  
+`tex\latex\fancyhdr\fancyhdr.sty` of package `fancyhdr`  
+`tex\latex\sectsty\sectsty.sty` of package `sectsty`  
+`tex\latex\tocbibind\tocbibind.sty` of package `tocbibind`  
+`tex\latex\tocloft\tocloft.sty` of package `tocloft`  
+`tex\xelatex\xetex-def\xetex.def` from package `xetex-def`  
+
+Kannada char not supported
+`! Package inputenc Error: Unicode char \u8:್ not set up for use with LaTeX.`
+
+XeTex displays something but no Unicode characters at all.
+XeLaTeX engine
+
+
+Basic problem seems to be proper Unicode font.
+
+```
+Missing character: There is no à in font cmr12!
+Missing character: There is no ² in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ³ in font cmr12!
+Missing character: There is no ‡ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ² in font cmr12!
+Missing character: There is no • in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ³ in font cmr12!
+Missing character: There is no  in font cmr12!
+```

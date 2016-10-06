@@ -1,8 +1,8 @@
 ---
 title: "The best options to study for SAS Certified Base Programmer for SAS 9 Credential"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "August 16, 2015"
-output: pdf_document
+output: html_document
 ---
 
 *Created on Friday, February 21st, 2014 at 6:59 am*

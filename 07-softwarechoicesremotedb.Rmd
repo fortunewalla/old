@@ -1,8 +1,8 @@
 ---
 title: "Software choices to implement a remote database client/server network setup"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "August 16, 2015"
-output: pdf_document
+output: html_document
 ---
 *Posted on Thursday, May 8th, 2014 at 2:25 am*
 

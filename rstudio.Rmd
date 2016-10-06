@@ -1,0 +1,74 @@
+---
+title: "RStudio"
+author: "Fortune Walla"
+date: "July 28, 2016"
+output: html_document
+---
+
+# RMarkdown Installation
+Requirements: bitops, caTools, digest, evaluate, formatR, highr, htmltools, knitr, magrittr, markdown, mime, Rcpp, rmarkdown, stringi, stringr, yaml
+
+Packages also installed: jsonlite, base64enc
+
+After installing, RMarkdown to PDF requires extra TeX packages (Using MiKTeX Basic installer package.)
+```
+upquote tex\latex\upquote\upquote.sty
+microtype tex\latex\microtype\microtype.sty
+url tex\latex\url\url.sty
+fancyvrb tex\latex\fancyvrb\fancyvrb.sty
+framed tex\latex\framed\framed.sty
+titling tex\latex\titling\titling.sty
+mptopdf tex\context\base\supp-pdf.mkii
+```
+
+After adding a table in RMarkdown:
+```
+booktabs tex\latex\booktabs\booktabs.sty
+```
+
+
+# RMarkdown Unicode
+Works for HTML & DOCX but for PDF gives error
+
+```
+---
+title: "Unicode Testing"
+author: "Fortune Walla"
+date: "July 29, 2016"
+output: pdf_document
+---
+
+
+
+# ರೇ ಕ್ಕ
+```
+
+
+```
+
+
+processing file: testkan.Rmd
+  |.................................................................| 100%
+  ordinary text without R code
+
+
+"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS testkan.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output testkan.pdf --template "C:\PROGRA~1\R\R-33~1.0\library\RMARKD~1\rmd\latex\DEFAUL~2.TEX" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+output file: testkan.knit.md
+
+! Package inputenc Error: Unicode char \u8:à²° not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \section{à²°à³‡ à²•à³à²•}
+
+Try running pandoc with --latex-engine=xelatex.
+pandoc.exe: Error producing PDF from TeX source
+Error: pandoc document conversion failed with error 43
+In addition: Warning message:
+running command '"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS testkan.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output testkan.pdf --template "C:\PROGRA~1\R\R-33~1.0\library\RMARKD~1\rmd\latex\DEFAUL~2.TEX" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in"' had status 43 
+Execution halted
+```
+
+

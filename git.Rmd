@@ -1,8 +1,8 @@
 ---
 title: "Git & GitHub Notes"
-author: "fortuneWalla"
+author: "Fortune Walla"
 date: "June 19, 2015"
-output: pdf_document
+output: html_document
 ---
 ----
 
