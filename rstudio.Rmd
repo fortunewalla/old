@@ -5,6 +5,13 @@ date: "July 28, 2016"
 output: html_document
 ---
 
+### RStudio installation\removal Ubuntu
+
+```
+sudo dpkg -i <filename.deb>
+sudo dpkg -r <filename.deb>
+```
+
 ### RStudio Version 0.99.902 works with Windows XP SP3 
 
 `RStudio-0.99.902.exe`
@@ -30,7 +37,6 @@ After adding a table in RMarkdown:
 ```
 booktabs tex\latex\booktabs\booktabs.sty
 ```
-
 
 ### RMarkdown Unicode
 Works for HTML & DOCX but for PDF gives error
