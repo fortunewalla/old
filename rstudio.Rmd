@@ -5,7 +5,7 @@ date: "July 28, 2016"
 output: html_document
 ---
 
-### RStudio installation\removal Ubuntu
+### RStudio installation removal Ubuntu
 
 ```
 sudo dpkg -i <filename.deb>
