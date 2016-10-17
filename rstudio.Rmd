@@ -5,7 +5,12 @@ date: "July 28, 2016"
 output: html_document
 ---
 
-# RMarkdown Installation
+### RStudio Version 0.99.902 works with Windows XP SP3 
+
+`RStudio-0.99.902.exe`
+
+
+### RMarkdown Installation
 Requirements: bitops, caTools, digest, evaluate, formatR, highr, htmltools, knitr, magrittr, markdown, mime, Rcpp, rmarkdown, stringi, stringr, yaml
 
 Packages also installed: jsonlite, base64enc
@@ -27,7 +32,7 @@ booktabs tex\latex\booktabs\booktabs.sty
 ```
 
 
-# RMarkdown Unicode
+### RMarkdown Unicode
 Works for HTML & DOCX but for PDF gives error
 
 ```

@@ -123,8 +123,12 @@ $(document).ready(function () {
 </div>
 
 
-<div id="rmarkdown-installation" class="section level1">
-<h1>RMarkdown Installation</h1>
+<div id="rstudio-version-0.99.902-works-with-windows-xp-sp3" class="section level3">
+<h3>RStudio Version 0.99.902 works with Windows XP SP3</h3>
+<p><code>RStudio-0.99.902.exe</code></p>
+</div>
+<div id="rmarkdown-installation" class="section level3">
+<h3>RMarkdown Installation</h3>
 <p>Requirements: bitops, caTools, digest, evaluate, formatR, highr, htmltools, knitr, magrittr, markdown, mime, Rcpp, rmarkdown, stringi, stringr, yaml</p>
 <p>Packages also installed: jsonlite, base64enc</p>
 <p>After installing, RMarkdown to PDF requires extra TeX packages (Using MiKTeX Basic installer package.)</p>
@@ -138,8 +142,8 @@ mptopdf tex\context\base\supp-pdf.mkii</code></pre>
 <p>After adding a table in RMarkdown:</p>
 <pre><code>booktabs tex\latex\booktabs\booktabs.sty</code></pre>
 </div>
-<div id="rmarkdown-unicode" class="section level1">
-<h1>RMarkdown Unicode</h1>
+<div id="rmarkdown-unicode" class="section level3">
+<h3>RMarkdown Unicode</h3>
 <p>Works for HTML &amp; DOCX but for PDF gives error</p>
 <pre><code>---
 title: &quot;Unicode Testing&quot;
@@ -150,7 +154,7 @@ output: pdf_document
 
 
 
-# ರೇ ಕ್ಕ</code></pre>
+# à²°à³ à²à³à²</code></pre>
 <pre><code>
 
 processing file: testkan.Rmd
@@ -161,13 +165,13 @@ processing file: testkan.Rmd
 &quot;C:/Program Files/RStudio/bin/pandoc/pandoc&quot; +RTS -K512m -RTS testkan.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output testkan.pdf --template &quot;C:\PROGRA~1\R\R-33~1.0\library\RMARKD~1\rmd\latex\DEFAUL~2.TEX&quot; --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable &quot;geometry:margin=1in&quot; 
 output file: testkan.knit.md
 
-! Package inputenc Error: Unicode char \u8:à²° not set up for use with LaTeX.
+! Package inputenc Error: Unicode char \u8:Ã Â²Â° not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H &lt;return&gt;  for immediate help.
  ...                                              
                                                   
-l.90 \section{à²°à³‡ à²•à³à²•}
+l.90 \section{Ã Â²Â°Ã Â³â¡ Ã Â²â¢Ã Â³ÂÃ Â²â¢}
 
 Try running pandoc with --latex-engine=xelatex.
 pandoc.exe: Error producing PDF from TeX source
