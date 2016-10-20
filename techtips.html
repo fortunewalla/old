@@ -123,10 +123,25 @@ $(document).ready(function () {
 </div>
 
 
-<p><strong>URL for Default image of YouTube video 480px × 360px</strong> <code>https://i.ytimg.com/vi/&lt;VID&gt;/hqdefault.jpg</code></p>
+<p><strong>URL for Default image of YouTube video 480px Ã 360px</strong> <code>https://i.ytimg.com/vi/&lt;VID&gt;/hqdefault.jpg</code></p>
 <p><strong>VirtualBox Time</strong></p>
 <pre><code>vboxmanage getextradata &quot;guest&quot; &quot;VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled&quot;
 vboxmanage setextradata &quot;guest&quot; &quot;VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled&quot; &quot;1&quot;</code></pre>
+<p><strong>CentOS</strong></p>
+<pre><code>sudo adduser &lt;username&gt;
+sudo passwd &lt;username&gt;
+sudo usermod -aG wheel &lt;username&gt;
+sudo gpasswd -a &lt;username&gt; wheel
+Adding user &lt;username&gt; to group wheel
+sudo visudo</code></pre>
+<p>Press i to enter – INSERT – mode</p>
+<pre><code>## The COMMANDS section may have other options added to it.
+##
+## Allow root to run any commands anywhere
+
+&lt;username&gt;&lt;TAB&gt;ALL=(ALL)&lt;TAB&gt;ALL</code></pre>
+<p>e.g. testusername ALL=(ALL) ALL</p>
+<p>After typing press Esc key. Then Press <code>:wq</code> to save and exit.</p>
 
 
 

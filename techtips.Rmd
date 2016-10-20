@@ -13,3 +13,27 @@ vboxmanage getextradata "guest" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTim
 vboxmanage setextradata "guest" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" "1"
 ```
 
+**CentOS create new user and assign as sudo**
+```
+sudo adduser <username>
+sudo passwd <username>
+sudo usermod -aG wheel <username>
+sudo gpasswd -a <username> wheel
+Adding user <username> to group wheel
+sudo visudo
+```
+Press i to enter -- INSERT -- mode
+``` 
+## The COMMANDS section may have other options added to it.
+##
+## Allow root to run any commands anywhere
+
+<username><TAB>ALL=(ALL)<TAB>ALL
+```
+e.g. 
+testusername ALL=(ALL)       ALL
+ 
+After typing press Esc key. Then Press `:wq` to save and exit. Logout and login to `<username>` account.
+
+
+
